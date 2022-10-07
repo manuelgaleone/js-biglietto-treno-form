@@ -3,8 +3,8 @@ let prezzoChilometri = 0.21
 
 //Richiesta d'età
 let nomePasseggero = document.getElementById("nome").value;
-let etaPasseggero = Number(document.getElementById("eta").value);
-let chilometri = Number(document.getElementById("chilometri").value);
+let etaPasseggero = Number(document.getElementById("eta")).value;
+let chilometri = Number(document.getElementById("chilometri")).value;
 
 //Calcolo prezzo
 let prezzo = chilometri * prezzoChilometri
@@ -25,7 +25,19 @@ if (etaPasseggero < 18) {
     
 }
 
-//Comunicazione prezzo
-document.getElementById('comunicazione').innerHTML = "Dovrai pagare in totale:" + " " + (costoFinale).toFixed(2) + "euro."
+//Funzione Click
+const generaButton = document.getElementById("genera");
+generaButton.addEventListener("click", function(){
 
-document.getElementById('nomeTicket').innerHTML = nomePasseggero;
+    document.getElementById("ticket").style.display = "block";
+    document.getElementById("nomeTicket").innerHTML = nomePasseggero;
+
+
+})
+
+const annullaButton = document.getElementById("annulla");
+annullaButton.addEventListener("click", function(){
+
+    document.getElementById("ticket").style.display = "none";
+
+})

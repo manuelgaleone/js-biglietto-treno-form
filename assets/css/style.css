@@ -54,3 +54,7 @@ main {
 .tb_ticket {
     border: 1px solid black;
 }
+
+#ticket {
+    display: none;
+}
