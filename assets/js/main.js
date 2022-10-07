@@ -32,8 +32,8 @@ generaButton.addEventListener("click", function(){
     document.getElementById("ticket").style.display = "block";
     document.getElementById("nomeTicket").innerHTML = nomePasseggero;
     document.getElementById('offerta').innerHTML = option.text;
-    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10);
-    document.getElementById("codice").innerHTML = Math.floor(Math.random() * 5000);
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+    document.getElementById("codice").innerHTML = Math.floor(Math.random() * (9900 - 1500 + 1)) + 1500;
     document.getElementById("costoBiglietto").innerHTML = costoFinale;
 
 })
