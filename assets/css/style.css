@@ -1,5 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*General Settings*/
+.margin_left_right_auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Main*/
+.genera_button {
+    display: inline-block;
+    padding: 5px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: #B91450;
+    width: 100px;
+    text-align: center;
+    border: 2px solid #B91450;
 }
