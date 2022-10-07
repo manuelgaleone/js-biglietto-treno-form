@@ -27,3 +27,5 @@ if (etaPasseggero < 18) {
 
 //Comunicazione prezzo
 document.getElementById('comunicazione').innerHTML = "Dovrai pagare in totale:" + " " + (costoFinale).toFixed(2) + "euro."
+
+document.getElementById('nomeTicket').innerHTML = nomePasseggero;

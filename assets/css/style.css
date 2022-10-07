@@ -4,7 +4,38 @@
     margin-right: auto;
 }
 
+.color_white {
+    color: white;
+}
+
+.bg_white {
+    background-color: white;
+}
+
+.bg_gray {
+    background-color: lightgray;
+}
+
 /*Main*/
+main {
+    background-color: #B91450;
+    height: 100vh;
+}
+
+.input_text {
+    border: 1.5px solid #B91450;
+    background-color: white;
+}
+
+.buttons {
+    padding-top: 50px;
+}
+
+.dettaglio_passeggeri {
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .genera_button {
     display: inline-block;
     padding: 5px;
@@ -14,4 +45,12 @@
     width: 100px;
     text-align: center;
     border: 2px solid #B91450;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.tb_ticket {
+    border: 1px solid black;
 }

@@ -14,10 +14,10 @@
     
     <main>
         <div class="input_section">
-            <h1 class="text-center py-4">
+            <h2 class="text-center color_white py-4">
                 CALCOLA IL PREZZO DEL TUO BIGLIETTO
-            </h1>
-            <div class="container rounded-4 p-4">
+            </h2>
+            <div class="container bg_white rounded-4 p-5">
                 <div class="info_section">
                     <div class="container">
                         <div class="row">
@@ -37,30 +37,81 @@
                                 <p class="input_title">
                                     Fascia d'età
                                 </p>
-                                <input id="eta" class="rounded-3 input_text text-center" type="text">
-                                <!-- <div class="mb-3"> 
+                                <div class="mb-3"> 
                                     <select class="rounded-3 input_text px-5 py-1" name="" id="">
                                         <option selected>Tariffa Minorenne</option>
                                         <option value="">Tariffa Over 65</option>
                                         <option value="">Tariffa Standard</option>
                                     </select>
-                                </div> --> 
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="buttons text-center py-4">
-                        <a class="genera_button rounded-3" href="#">Genera</a>
-                        <a class="genera_button mx-3 rounded-3" href="#">Annulla</a>
+                    <div class="buttons text-center">
+                        <a id="genera" class="genera_button rounded-3" href="#">Genera</a>
+                        <a id="annulla" class="genera_button mx-3 rounded-3" href="#">Annulla</a>
                     </div> 
-                </div>
-                <div class="ticket_section">
-                    <h1 id="comunicazione" class="text-center py-3">
-                        
-                    </h1>
                 </div>
             </div>
         </div>
-
+        <div class="ticket_section">
+            <h2 class="text-center color_white py-4">
+                IL TUO BIGLIETTO
+            </h2>
+            <div class="container p-5 bg_white">
+                <p class="dettaglio_passeggeri">
+                    DETTAGLIO PASSEGGERI
+                </p>
+                <div class="biglietto_info">
+                    <div class="row">
+                        <div class="col-4 bg_gray p-5 tb_ticket">
+                            <h3>
+                                NOME PASSEGGERO
+                            </h3>
+                            <p id="nomeTicket">
+    
+                            </p>
+                        </div>
+                        <div class="col-8 tb_ticket">
+                            <div class="row p-5">
+                                <div class="col-3">
+                                    <h3>
+                                        Offerta
+                                    </h3>
+                                    <p id="offerta">
+    
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <h3>
+                                        Carrozza
+                                    </h3>
+                                    <p id="carrozza">
+    
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <h3>
+                                        Codice CP
+                                    </h3>
+                                    <p id="codice">
+    
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <h3>
+                                        Costo biglietto
+                                    </h3>
+                                    <p id="costoBiglietto">
+    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!--Script-->
